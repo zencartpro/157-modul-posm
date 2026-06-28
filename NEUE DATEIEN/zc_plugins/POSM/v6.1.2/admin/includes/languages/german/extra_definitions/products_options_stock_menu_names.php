@@ -10,12 +10,12 @@
 * @version $Id: products_options_stock_menu_names.php 2026-06-28 12:25:29Z webchills $
 */
 define ('BOX_REPORTS_PRODUCTS_OPTIONS_STOCK', 'Verkäufe nach Attribut Varianten');
-define ('BOX_CATALOG_PRODUCTS_OPTIONS_STOCK', 'Attribut Lagerbestand Manager &mdash; Lagerbestände verwalten');
-define ('BOX_CATALOG_PRODUCTS_OPTIONS_STOCK_VIEW_ALL', 'Attribut Lagerbestand Manager &mdash; Alle anzeigen');
-define ('BOX_LOCALIZATION_PRODUCTS_OPTIONS_STOCK', 'Attribut Lagerbestand Manager &mdash; Out-of-Stock Labels');
-define ('BOX_CONFIGURATION_PRODUCTS_OPTIONS_STOCK', 'Attribut Lagerbestand Manager &mdash; Konfiguration');
-define ('BOX_TOOLS_CONVERT_SBA2POSM', 'Attribut Lagerbestand Manager &mdash; Stock by Attributes Daten konvertieren');
-define ('BOX_TOOLS_POSM_FIND_DUPMODELS', 'Attribut Lagerbestand Manager &mdash; Doppelte Artikelnummern finden');
+define ('BOX_CATALOG_PRODUCTS_OPTIONS_STOCK', 'POSM Attribut Lagerbestands Manager &mdash; Lagerbestände verwalten');
+define ('BOX_CATALOG_PRODUCTS_OPTIONS_STOCK_VIEW_ALL', 'POSM Attribut Lagerbestands Manager &mdash; Alle anzeigen');
+define ('BOX_LOCALIZATION_PRODUCTS_OPTIONS_STOCK', 'POSM Attribut Lagerbestands Manager &mdash; Out-of-Stock Labels');
+define ('BOX_CONFIGURATION_PRODUCTS_OPTIONS_STOCK', 'POSM Attribut Lagerbestand Manager &mdash; Konfiguration');
+define ('BOX_TOOLS_CONVERT_SBA2POSM', 'POSM Attribut Lagerbestand Manager &mdash; Stock by Attributes Daten konvertieren');
+define ('BOX_TOOLS_POSM_FIND_DUPMODELS', 'POSM Attribut Lagerbestand Manager &mdash; Doppelte Artikelnummern finden');
 
 // -----
 // Used by the initialization script, when checking that the EO function file contains the "proper" notifiers,

@@ -42,29 +42,29 @@ define ('TEXT_OPTION_MODEL', 'SKU');
 define ('TEXT_OOS_LABEL', 'Out-of-Stock Label');
 define ('TEXT_OOS_DATE', 'Out-of-Stock Datum<br /><span class="smaller">Eingeben als YYYY-MM-DD</span>');
 define ('TEXT_NONE_DEFINED', '-- nicht definiert --');
-define('TEXT_PLEASE_SELECT', 'Bitte wählen ...');
-define('TEXT_ALL_CATEGORIES', 'Alle Kategorien');
-define('TEXT_CHOOSE_CATEGORY', 'Wählen Sie die Kategorie, aus der Artikel angezeigt werden sollen: ');
-define('TEXT_CHOOSE_PRODUCT', 'Artikel zum Verwalten auswählen: ');
-define('TEXT_NO_PRODUCTS_IN_CATEGORY', 'Derzeit sind keine Artikel in der gewählten Kategorie definiert.');
+define ('TEXT_PLEASE_SELECT', 'Bitte wählen ...');
+define ('TEXT_ALL_CATEGORIES', 'Alle Kategorien');
+define ('TEXT_CHOOSE_CATEGORY', 'Wählen Sie die Kategorie, aus der Artikel angezeigt werden sollen: ');
+define ('TEXT_CHOOSE_PRODUCT', 'Artikel zum Verwalten auswählen: ');
+define ('TEXT_NO_PRODUCTS_IN_CATEGORY', 'Derzeit sind keine Artikel in der gewählten Kategorie definiert.');
 
-define('TEXT_MODEL_DEFAULT', 'Als Voreinstellung setzen?');
-define('TEXT_MODEL_DEFAULT_TITLE', 'Soll diese Artikelnummer für alle derzeit leeren Werte gesetzt werden?');
+define ('TEXT_MODEL_DEFAULT', 'Als Voreinstellung setzen?');
+define ('TEXT_MODEL_DEFAULT_TITLE', 'Soll diese Artikelnummer für alle derzeit leeren Werte gesetzt werden?');
 define ('BUTTON_DEFINE_LABELS', 'Labels definieren');
 define ('BUTTON_DEFINE_LABELS_ALT', 'Klicken Sie hier, um Ihre Out-of-Stock Labels zu definieren');
 define ('BUTTON_VIEW_ALL', 'zeige alle');
 define ('BUTTON_VIEW_ALL_ALT', 'Klicken Sie hier um alle verwalteten Artikel auf einer einzigen Seite anzuzeigen');
-define('BUTTON_GO', 'Los');
+define ('BUTTON_GO', 'Los');
 
 define ('TEXT_INCLUDE_DISABLED', 'Deaktivierte Artikel einschließen? ');
 define ('TEXT_INCLUDE_MODEL', 'Artikelnummer einschließen? ');
 
 define('BUTTON_UPDATE', 'Aktualisieren');
 define ('TEXT_UPDATE_ALT', 'Alle aktualisieren');
-define('BUTTON_REMOVE', 'Entfernen');
+define ('BUTTON_REMOVE', 'Entfernen');
 define ('TEXT_REMOVE_ALT', 'Ausgewählte Kombinationen entfernen');
 
-define('TEXT_SINGLE_LABEL_NAME', '<b>Note:</b> Only one (<em><b>%1$s</b></em>) &quot;' . TEXT_OOS_LABEL . '&quot; is defined.  That label will be used for all <em>POSM</em>-managed products that are out-of-stock.');
+define('TEXT_SINGLE_LABEL_NAME', '<b>Hinweis:</b> Nur 1 (<em><b>%1$s</b></em>) &quot;' . TEXT_OOS_LABEL . '&quot; ist definiert.  Dieses Label wird verwendet werden für alle <em>POSM</em>-verwalteten Artikel, die nicht lagernd sind.');
 
 define ('ERROR_INVALID_DATE', 'Ein <strong>Out-of-Stock Datum</strong> muss in folgendem Format eingegeben werden YYYY-MM-DD und es muss ein gültiges Datum sein.');
 define ('ERROR_INVALID_FORM_VALUES', 'Ungültige Werte wurden gefunden (code %s).');
@@ -76,7 +76,7 @@ define ('SUCCESS_OPTIONS_ADDED', 'Neue Optionen wurden zu den bestehenden Option
 define('ERROR_MISSING_INPUTS', 'Die Anfrage konnte nicht abgeschlossen werden. Bitte erhöhen Sie in der PHP Konfiguration die Werte für <code>post_max_size</code> (derzeit %1$s) und/oder <code>max_input_vars</code> (derzeit %2$s).');
 
 define ('JS_MESSAGE_DELETE_ALL_CONFIRM', 'Wollen Sie diese \'+n+\' Einträge wirklich entfernen?');
-define('JS_MESSAGE_INSERT_NEW_CONFIRM', 'This action will will insert \'+items+\' option-combinations. Do you want to continue?');
+define('JS_MESSAGE_INSERT_NEW_CONFIRM', 'Diese Aktion wird \'+items+\' Attributkombinationen hinzufügen. Wollen Sie damit weitermachen?');
 define ('JS_MESSAGE_INSERT_MULTIPLE_CONFIRM', 'Dieser Vorgang wird \'+items+\' neue Optionen einfügen. Bisherige Optionen werden hinsichtlich ihrer Mengen \'+add_replace+\'. Möchten Sie fortsetzen?');
 define ('JS_MESSAGE_UPDATED', 'erhöht um \'+quantity+\'');
 define ('JS_MESSAGE_REPLACED', 'ersetzt auf den neuen Wert');

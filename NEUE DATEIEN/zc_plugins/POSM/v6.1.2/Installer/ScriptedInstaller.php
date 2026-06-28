@@ -7,7 +7,7 @@
 * Zen Cart German Specific (210 code in 157)
 * Zen Cart German Version - www.zen-cart-pro.at
 * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
-* @version $Id: ScriptedInstaller.php 2026-06-28 12:25:29Z webchills $
+* @version $Id: ScriptedInstaller.php 2026-06-28 17:02:29Z webchills $
 */
 use Zencart\PluginSupport\ScriptedInstaller as ScriptedInstallBase;
 
@@ -99,10 +99,10 @@ class ScriptedInstaller extends ScriptedInstallBase
         //
         
  $sql =  "REPLACE INTO configuration_language (configuration_title, configuration_key, configuration_description, configuration_language_id) VALUES
-('POSM - Allgemein: Modul im Frontend aktivieren', 'POSM_ENABLE', 'Soll die Verarbeitung von <em>„Produktoptionen“ und „Lagerbestand“</em> für den Shop aktiviert werden?',	43),
-('POSM - Allgemein: Doppelte Artikelnummern erlauben', 'POSM_DUPLICATE_MODELNUMS', 'Wie sollen die Tools auf Administratorebene mit doppelten Modellnummern umgehen? Wählen Sie eine der folgenden Optionen:<ol><li><b>Zulassen</b> (Standard): Keine Meldung, Speichern zulassen.</li><li><b>Nicht zulassen:</b> Meldung anzeigen, Speichern nicht zulassen.</li><li><b>Nur Meldung:</b> Meldung anzeigen, Speichern zulassen.</li></ol>',	43),
-('POSM - Allgemein: Farbe für Trenner', 'POSM_DIVIDER_COLOR', 'Geben Sie die Hintergrundfarbe ein, die für die Trennlinie verwendet werden soll, unter <em>Katalog :: Produkte\‚ Optionen\‘ Lagerverwaltung.</em>',	43),
-('POSM - Allgemein: Lagerbestand für Nachbestellung', 'POSM_STOCK_REORDER_LEVEL', 'Geben Sie den Mindestbestand für Produkte mit Optionen ein. Dieser Wert wird verwendet, um Optionen mit niedrigem Lagerbestand in den Tools <em>Katalog->Optionen verwalten\' Lagerbestand</em> hervorzuheben, und bestimmt, sofern <em>Konfiguration->E-Mail-Optionen->E-Mails bei niedrigem Lagerbestand senden</em> aktiviert ist, den Lagerbestand, ab dem diese E-Mails versendet werden.<br><br><strong>Hinweis:</strong> Der eingegebene Wert darf <em>ausschließlich</em> aus Ziffern (0–9) bestehen.',	43),
+('POSM - Allgemein: Modul im Frontend aktivieren', 'POSM_ENABLE', 'Soll der <em>POSM Lagerbestandsmanager</em> im Frontend aktiviert werden?',	43),
+('POSM - Allgemein: Doppelte Artikelnummern erlauben', 'POSM_DUPLICATE_MODELNUMS', 'Wie sollen die Tools auf Administratorebene mit doppelten Artikelnummern umgehen? Wählen Sie eine der folgenden Optionen:<ol><li><b>Zulassen (Allow)</b> (Standard): Keine Meldung, Speichern zulassen.</li><li><b>Nicht zulassen (Disallow):</b> Meldung anzeigen, Speichern nicht zulassen.</li><li><b>Nur Meldung (Message only):</b> Meldung anzeigen, Speichern zulassen.</li></ol>',	43),
+('POSM - Allgemein: Farbe für Trenner', 'POSM_DIVIDER_COLOR', 'Geben Sie die Hintergrundfarbe ein, die für die Trennlinie verwendet werden soll, unter <em>POSM Attribut Lagerbestands Manager &mdash; Lagerbestände verwalten</em>',	43),
+('POSM - Allgemein: Lagerbestand für Nachbestellung', 'POSM_STOCK_REORDER_LEVEL', 'Geben Sie den Mindestbestand für Artikel mit Attributen ein. Dieser Wert wird verwendet, um Optionen mit niedrigem Lagerbestand in den Tools <em>Katalog->Optionen verwalten\' Lagerbestand</em> hervorzuheben, und bestimmt, sofern <em>Konfiguration->E-Mail-Optionen->E-Mails bei niedrigem Lagerbestand senden</em> aktiviert ist, den Lagerbestand, ab dem diese E-Mails versendet werden.<br><br><strong>Hinweis:</strong> Der eingegebene Wert darf <em>ausschließlich</em> aus Ziffern (0–9) bestehen.',	43),
 ('POSM - Allgemein: Erinnerung für wieder lagernde Varianten', 'POSM_BIS_DATE_REMINDER', 'Wenn Ihr Geschäft die Etiketten von <em>POSM</em> mit Verfügbarkeitsdaten verwendet, möchten Sie möglicherweise eine Erinnerung erhalten, wenn ein Datum näher rückt. Legen Sie fest, wie viele Tage <b>vor</b> dem Ablaufdatum die Benachrichtigung versendet werden soll; setzen Sie den Wert auf 0 (Standard), wenn Sie keine Erinnerung wünschen.',	43),
 ('POSM - Allgemein: Attribut Typen, die verwaltet werden sollen', 'POSM_OPTIONS_TYPES_TO_MANAGE', 'Geben Sie die zu verwaltenden Optionstypen als komma-getrennte Liste ein. Derzeit werden nur die Optionstypen „Dropdown/Auswahl“ (0) und „Radiobutton“ (2) unterstützt!',	43),
 ('POSM - Allgemein: Optionale Liste der ignorierten Attributypen', 'POSM_OPTIONAL_OPTION_TYPES_LIST', 'Geben Sie die Optionstypen ein, die bei der Feststellung, ob die Optionskombination eines Produkts verwaltet wird, ignoriert werden sollen. Verwenden Sie dazu eine komma-getrennte Liste. <br><br>Die in Zen Cart integrierten Optionstypen sind Dropdown/Auswahl (0), Text (1), Optionsfeld (2), Kontrollkästchen (3), Datei (4) und Schreibgeschützt (5).',	43),

@@ -27,6 +27,6 @@ define ('INCLUDE_DISABLED', 'Deaktivierte Artikel einschließen?');
 define('POSM_MODEL_IS_EMPTY', '--leer--');
 define('BUTTON_GO', 'Los');
 
-define('DUPS_UNMANAGED_UNMANAGED', 'Unmanaged Products with Models Duplicated in Unmanaged Products');
-define('DUPS_UNMANAGED_MANAGED', 'Unmanaged Products with Models Duplicated in Managed Products');
-define('DUPS_MANAGED_MANAGED', 'Managed Products with Models Duplicated in Managed Products');
+define('DUPS_UNMANAGED_UNMANAGED', 'Nicht verwaltete Artikel mit Artikelnummern, die in nicht verwalteten Artikeln doppelt vorhanden sind');
+define('DUPS_UNMANAGED_MANAGED', 'Nicht verwaltete Artikel mit Artikelnummern, die in verwalteten Artikeln doppelt vorhanden sind');
+define('DUPS_MANAGED_MANAGED', 'Verwaltete Artikel mit Artikelnummern, die in verwalteten Artikeln doppelt vorhanden sind');
