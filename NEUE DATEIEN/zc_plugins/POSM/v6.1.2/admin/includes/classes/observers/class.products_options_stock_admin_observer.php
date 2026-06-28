@@ -7,7 +7,7 @@
 * Zen Cart German Specific (210 code in 157)
 * Zen Cart German Version - www.zen-cart-pro.at
 * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
-* @version $Id: class.products_options_stock_admin_observer.php 2026-06-28 12:25:29Z webchills $
+* @version $Id: class.products_options_stock_admin_observer.php 2026-06-28 18:25:29Z webchills $
 */
 use App\Models\PluginControl;
 use App\Models\PluginControlVersion;
@@ -1111,7 +1111,7 @@ class products_options_stock_observer extends base
             $msg_text = $msg_text_override;
             $this->debug("getProductsStockMessage($prid), stock message overridden ($msg_text_override).");
         } elseif ($pos_record === false) {
-            if (zen_config('POSM_SHOW_UNMANAGED_OPTIONS_STATUS') === 'true') {
+            if ('POSM_SHOW_UNMANAGED_OPTIONS_STATUS' === 'true') {
                 if ($available_qty >= $addl_qty_needed) {
                     $msg_text = PRODUCTS_OPTIONS_STOCK_IN_STOCK;
                 } elseif ($available_qty == 0) {
@@ -1123,7 +1123,7 @@ class products_options_stock_observer extends base
             }
             $this->debug("getProductsStockMessage ($original_name [$prid]) is not a POSM product, message = $msg_text");
         } elseif ($pos_record->EOF || $force_out_of_stock_message !== false) {
-            if (zen_config('POSM_SHOW_UNMANAGED_OPTIONS_STATUS') === 'true' || $force_out_of_stock_message !== false) {
+            if ('POSM_SHOW_UNMANAGED_OPTIONS_STATUS' === 'true' || $force_out_of_stock_message !== false) {
                 $msg_text = PRODUCTS_OPTIONS_STOCK_NOT_IN_STOCK;
                 $this->debug("getProductsStockMessage ($original_name [$prid]), is not a POSM variant or overridden ($force_out_of_stock_message).");
             }

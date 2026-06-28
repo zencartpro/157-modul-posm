@@ -1,10 +1,14 @@
 <?php
-// -----
-// Part of the "Product Options Stock Manager" plugin by Cindy Merkin (cindy@vinosdefrutastropicales.com)
-// Copyright (c) 2014-2026 Vinos de Frutas Tropicales
-//
-// Last updated: POSM 6.1.2
-//
+/**
+* POSM Lagerbestandsmanager für Zen Cart 1.5.7k deutsch
+* Part of the "Product Options Stock Manager" plugin by Cindy Merkin (www.vinosdefrutastropicales.com)
+* Copyright (c) 2015-2026 Vinos de Frutas Tropicales
+* Copyright 2003-2026 Zen Cart Development Team
+* Zen Cart German Specific (210 code in 157)
+* Zen Cart German Version - www.zen-cart-pro.at
+* @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
+* @version $Id: class.products_options_stock_observer.php 2026-06-28 18:40:29Z webchills $
+*/
 use App\Models\PluginControl;
 use App\Models\PluginControlVersion;
 use Zencart\PluginManager\PluginManager;
@@ -271,7 +275,7 @@ class products_options_stock_observer extends base
             $decrement_managed_stock
         );
 
-        $products_status_update = (zen_config('SHOW_PRODUCTS_SOLD_OUT') === '0') ? ', products_status = 0' : '';
+        $products_status_update = ('SHOW_PRODUCTS_SOLD_OUT' === '0') ? ', products_status = 0' : '';
 
         // -----
         // If the stock-adjustment is to be totally overridden, note the condition in the log only.
@@ -657,7 +661,7 @@ class products_options_stock_observer extends base
                     $msg_text = $no_stock_message;
                 }
             } elseif ($pos_record === false) {
-                if (zen_config('POSM_SHOW_UNMANAGED_OPTIONS_STATUS') === 'true') {
+                if ('POSM_SHOW_UNMANAGED_OPTIONS_STATUS' === 'true') {
                     $quantity = zen_get_products_stock($prid);
                     if ($quantity >= $_SESSION['cart']->contents[$prid]['qty']) {
                         $extra_class = 'in-stock';
