@@ -1,9 +1,14 @@
 <?php
-// -----
-// Part of the "Product Options Stock Manager" plugin by Cindy Merkin (cindy@vinosdefrutastropicales.com)
-// Copyright (c) 2014-2024 Vinos de Frutas Tropicales
-//
-// Last updated: POSM 5.0.0
+/**
+* POSM Attribut Lagerbestands Manager für Zen Cart 1.5.7 deutsch
+* Part of the "Product Options Stock Manager" plugin by Cindy Merkin (www.vinosdefrutastropicales.com)
+* Copyright (c) 2015-2026 Vinos de Frutas Tropicales
+* Copyright 2003-2026 Zen Cart Development Team
+* Zen Cart German Specific (210 code in 157)
+* Zen Cart German Version - www.zen-cart-pro.at
+* @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
+* @version $Id: posm_dependencies_jscript.php 2026-06-28 19:25:29Z webchills $
+*/
 //
 // Loaded by the plugin's observer **only if** the plugin's operation is enabled for the storefront!
 //
