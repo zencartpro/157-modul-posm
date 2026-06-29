@@ -1,4 +1,8 @@
-.stock-wrapper { }
+.stock-wrapper {
+float:right;
+margin: 0 10px 10px 10px;
+
+ }
 #accountHistInfo .stock-wrapper { margin-top: 5px; }
 .stock-msg { border: 1px solid #505050; background-color: #bcbcbc; border-radius: 6px; padding: 3px; display: inline-block; margin: 3px; }
 #productAttributes .in-stock, .stock-msg.in-stock { color: green; }
