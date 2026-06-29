@@ -7,13 +7,13 @@
 * Zen Cart German Specific (210 code in 157)
 * Zen Cart German Version - www.zen-cart-pro.at
 * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
-* @version $Id: ScriptedInstaller.php 2026-06-29 07:10:29Z webchills $
+* @version $Id: ScriptedInstaller.php 2026-06-29 07:42:29Z webchills $
 */
 use Zencart\PluginSupport\ScriptedInstaller as ScriptedInstallBase;
 
 class ScriptedInstaller extends ScriptedInstallBase
 {
-    private string $configGroupTitle = 'Products\\\' Options\\\' Stock Manager';
+    private string $configGroupTitle = 'POSM Attribut Lagerbestands Manager';
 
     protected function executeInstall()
     {
@@ -179,7 +179,7 @@ class ScriptedInstaller extends ScriptedInstallBase
                 "INSERT IGNORE INTO " . TABLE_PRODUCTS_OPTIONS_STOCK_NAMES . "
                     (pos_name_id, language_id, pos_name)
                  VALUES
-                    (1, " . $current_language['id'] . ", 'Back-ordered')"
+                    (1, " . $current_language['id'] . ", 'wird beim Lieferanten bestellt')"
             );
         }
 
@@ -255,6 +255,8 @@ class ScriptedInstaller extends ScriptedInstallBase
             $this->configGroupTitle . ' Settings'
         );
         $sql = "DELETE FROM " . TABLE_CONFIGURATION . " WHERE configuration_group_id = $cgi";
+        $this->executeInstallerSql($sql);       
+        $sql = "DELETE FROM " . TABLE_CONFIGURATION_LANGUAGE . " WHERE configuration_title LIKE '%POSM -%'";
         $this->executeInstallerSql($sql);
         $sql = "DELETE FROM " . TABLE_CONFIGURATION_GROUP . " WHERE configuration_group_id = $cgi LIMIT 1";
         $this->executeInstallerSql($sql);
@@ -296,9 +298,9 @@ class ScriptedInstaller extends ScriptedInstallBase
 
         $sql =
             "INSERT INTO " . TABLE_CONFIGURATION_GROUP . "
-                (configuration_group_title, configuration_group_description, sort_order, visible)
+                (configuration_group_title, configuration_group_description, sort_order, visible, language_id)
              VALUES
-                ('$config_group_title', '$config_group_description', 1, 1)";
+                ('$config_group_title', '$config_group_description', 1, 1, 43)";
         $this->executeInstallerSql($sql);
         $sql = "SELECT configuration_group_id FROM " . TABLE_CONFIGURATION_GROUP . " WHERE configuration_group_title = '$config_group_title' LIMIT 1";
         $config_group = $this->executeInstallerSelectSql($sql);
