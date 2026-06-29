@@ -1,13 +1,13 @@
 <?php
 /**
-* POSM Lagerbestandsmanager für Zen Cart 1.5.7k deutsch
+* POSM Attribut Lagerbestands Manager für Zen Cart 1.5.7k deutsch
 * Part of the "Product Options Stock Manager" plugin by Cindy Merkin (www.vinosdefrutastropicales.com)
 * Copyright (c) 2015-2026 Vinos de Frutas Tropicales
 * Copyright 2003-2026 Zen Cart Development Team
 * Zen Cart German Specific (210 code in 157)
 * Zen Cart German Version - www.zen-cart-pro.at
 * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
-* @version $Id: products_options_stock_menu_names.php 2026-06-28 12:25:29Z webchills $
+* @version $Id: products_options_stock_menu_names.php 2026-06-29 07:25:29Z webchills $
 */
 define ('BOX_REPORTS_PRODUCTS_OPTIONS_STOCK', 'Verkäufe nach Attribut Varianten');
 define ('BOX_CATALOG_PRODUCTS_OPTIONS_STOCK', 'POSM Attribut Lagerbestands Manager &mdash; Lagerbestände verwalten');
@@ -21,10 +21,10 @@ define ('BOX_TOOLS_POSM_FIND_DUPMODELS', 'POSM Attribut Lagerbestand Manager &md
 // Used by the initialization script, when checking that the EO function file contains the "proper" notifiers,
 // when checking for "expired" back-in-stock dates and messaging installation or updates.
 //
-define('POSM_EO_DOWNLEVEL', 'The <em>Edit Orders</em> version (v%s) currently installed <em>does not support</em> the <em>Products\' Options\' Stock Manager</em>; please update to EO v4.2.0 or later.');
-define('POSM_BIS_DATES_EXPIRED', 'One or more back-in-stock dates are in their expiration period (%1$u days); click <a href="%2$s">here</a> for more information');
-define('POSM_INSTALLED', 'Products\' Options\' Stock Manager, version %s was successfully installed.');
-define('POSM_UPDATED', 'Products\' Options\' Stock Manager was successfully updated from version %1$s to %2$s.');
+define('POSM_EO_DOWNLEVEL', 'Die derzeit installierte Version <em>Edit Orders</em> (v%s) <em>unterstützt</em> den <em>„POSM Attribut Lagerbestands Manager“</em> nicht; bitte aktualisieren Sie auf Edit Orders v4.2.0 oder höher.');
+define('POSM_BIS_DATES_EXPIRED', 'Ein oder mehrere Wiederverfügbarkeitstermine befinden sich in der Ablaufphase (%1$u Tage); klicken Sie <a href="%2$s">hier</a>, um weitere Informationen zu erhalten');
+define('POSM_INSTALLED', 'POSM Attribut Lagerbestands Manager Version %s wurde erfolgreich installiert.');
+define('POSM_UPDATED', 'POSM Attribut Lagerbestands Manager wurde erfolgreich aktualisiert von Version %1$s auf %2$s.');
 
 // -----
 // Used on the categories page as alt-text for the options-stock indicator icons.
@@ -44,16 +44,16 @@ define('SUCCESS_COPYING_OPTIONS_STOCK', '%u Products\' Options\' Stock record(s)
 // -----
 // Used by Catalog->Manage Options' Stock to notify the admin user when the re-order level has been found to be invalid.
 //
-define ('CAUTION_POSM_REORDER_LEVEL', "Die <em>Lagerbestand Re-order Level</em> Einstellung hat einen ungültigen Wert (%s) enthalten; der Wert wurde zurückgesetzt auf 0.");
+define ('CAUTION_POSM_REORDER_LEVEL', 'Die <em>Lagerbestand Re-order Level</em> Einstellung hat einen ungültigen Wert (%s) enthalten; der Wert wurde zurückgesetzt auf 0.');
 
 // -----
 // Used by both Catalog->Manage Options' Stock and the "View All" tool to alert the admin to a disallowed duplicate model number and to provide
 // sort-by model number.
 //
 define ('ERROR_DUPLICATE_MODEL_FOUND', 'Die Artikelnummer (<em>%s</em>) wird bereits verwendet, daher muss sie geändert werden, um sie speichern zu können.');
-define ('JSCRIPT_ERROR_DUPLICATE_MODEL', "'Diese Artikelnummer ('+modelNum+') wird bereits verwendet, daher muss sie geändert werden, um sie speichern zu können.'");
-define('ERROR_MODEL_TOO_LONG', 'The model number (%s) entered has too many characters; please re-enter.');
-define('ERROR_INVALID_QUANTITY', 'A variant\'s quantity value must be numeric and non-negative, please re-enter.');
+define ('JSCRIPT_ERROR_DUPLICATE_MODEL', 'Diese Artikelnummer (\'+modelNum+\') wird bereits verwendet, daher muss sie geändert werden, um sie speichern zu können.');
+define('ERROR_MODEL_TOO_LONG', 'Die eingegebene Artikelnummer (%s) hat zuviele Zeichen; bitte neu eingeben.');
+define('ERROR_INVALID_QUANTITY', 'Die Menge einer Variante muss numerisch sein und darf nicht negativ sein: bitte neu eingeben.');
 
 define ('POSM_TEXT_SORT_BY', 'Wählen Sie die Sortierreihenfolge für die Kombinationen: ');
 define ('POSM_TEXT_SORT_BY_MODEL_ASC', 'Artikelnummer, A-Z');
@@ -66,10 +66,10 @@ define ('ERROR_INVALID_OPTION_COMBINATION', 'Die Kombination, die Sie wählen, i
     // -----
 // Used by  incudes/javascript/attributes_controller_posm.php.
 //
-define('POSM_JS_CAUTION_OPTION_REMOVAL', 'CAUTION!\n\nThis product\\\'s attributes are managed by the Products Options Stock Manager.\n\nIf you Confirm this option\\\'s deletion, **all** managed-options will be removed and the product\\\'s quantity will be set to 0.');
-define('POSM_JS_CAUTION_ATTRIBUTE_REMOVAL', 'CAUTION!\n\nThis product\\\'s attributes are managed by the Products Options Stock Manager.\n\nIf you Confirm this attribute\\\'s deletion, %u managed-option(s) will be removed and the product\\\'s quantity will be updated accordingly.');
+define('POSM_JS_CAUTION_OPTION_REMOVAL', 'VORSICHT!\n\nDie Attribute dieses Artikels werden vom POSM Attribut Lagerbestands Manager verwaltet.\n\nWenn Sie das Löschen dieses Attributs bestätigen, werden ALLE verwalteten Optionen entfernt und die Menge des Artikels wird auf 0 gesetzt.');
+define('POSM_JS_CAUTION_ATTRIBUTE_REMOVAL', 'VORSICHT!\n\nDie Attribute dieses Artikels werden vom POSM Attribut Lagerbestands Manager verwaltet.\n\nWenn Sie das Löschen dieses Attributs bestätigen, werden %u verwaltete Optionen entfernt und die Menge des Artikels wird entsprechend angepasst.');
     // -----
     // Used by includes/javascript/product_posm.php.
     //
 define ('POSM_BUTTON_MANAGE_STOCK', 'Lagerbestand verwalten');
-define ('POSM_TEXT_PRODUCTS_QTY_CLICK', 'Lagerbetsand dieses Artikels verwalten:');
+define ('POSM_TEXT_PRODUCTS_QTY_CLICK', 'Lagerbestand dieses Artikels verwalten:');

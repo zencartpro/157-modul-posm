@@ -1,4 +1,14 @@
 <?php
+/**
+* POSM Attribut Lagerbestands Manager für Zen Cart 1.5.7k deutsch
+* Part of the "Product Options Stock Manager" plugin by Cindy Merkin (www.vinosdefrutastropicales.com)
+* Copyright (c) 2015-2026 Vinos de Frutas Tropicales
+* Copyright 2003-2026 Zen Cart Development Team
+* Zen Cart German Specific (210 code in 157)
+* Zen Cart German Version - www.zen-cart-pro.at
+* @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
+* @version $Id: products_options_sales_report.php 2026-06-29 12:25:29Z webchills $
+*/
 define ('HEADING_TITLE', 'Products\' Options\' Sales Report');
 define ('TEXT_INSTRUCTIONS', "Choose a timeframe and a product and click the &quot;Display&quot; button to display the statistics for the product in that timeframe.  The first block of information will break each option's values out into a percentage of product-quantity and final price.  The second block identifies each option-combination's percentages.");
 define ('SEARCH_DATE_CUSTOM', 'Individuell');

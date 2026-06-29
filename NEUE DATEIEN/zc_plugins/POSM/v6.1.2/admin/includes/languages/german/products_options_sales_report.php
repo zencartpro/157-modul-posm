@@ -1,16 +1,16 @@
 <?php
 /**
-* POSM Lagerbestandsmanager für Zen Cart 1.5.7k deutsch
+* POSM Attribut Lagerbestands Manager für Zen Cart 1.5.7k deutsch
 * Part of the "Product Options Stock Manager" plugin by Cindy Merkin (www.vinosdefrutastropicales.com)
 * Copyright (c) 2015-2026 Vinos de Frutas Tropicales
 * Copyright 2003-2026 Zen Cart Development Team
 * Zen Cart German Specific (210 code in 157)
 * Zen Cart German Version - www.zen-cart-pro.at
 * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
-* @version $Id: products_options_sales_report.php 2026-06-28 12:25:29Z webchills $
+* @version $Id: products_options_sales_report.php 2026-06-29 07:25:29Z webchills $
 */
 define ('HEADING_TITLE', 'Verkaufsbericht für Attribute');
-define ('TEXT_INSTRUCTIONS', "Wählen Sie einen Zeitraum und einen Artikel und klicken Sie auf den &quot;Report anzeigen&quot; Button um die Statistiken anzuzeigen. Der erste Teil der Information wird jeden Attributwert auf Prozentsätze der verkauften Menge und des Gesamtwerts herunterbrechen.  Der zweite Block bringt dann die Prozentzahlen jeder Attributkombination.");
+define ('TEXT_INSTRUCTIONS', 'Wählen Sie einen Zeitraum und einen Artikel und klicken Sie auf den &quot;Report anzeigen&quot; Button um die Statistiken anzuzeigen. Der erste Teil der Information wird jeden Attributwert auf Prozentsätze der verkauften Menge und des Gesamtwerts herunterbrechen.  Der zweite Block bringt dann die Prozentzahlen jeder Attributkombination.');
 define ('SEARCH_DATE_CUSTOM', 'Individuell');
 define ('SEARCH_DATE_TODAY', 'Heute (%s)');
 define ('SEARCH_DATE_YESTERDAY', 'Gestern (%s)');
