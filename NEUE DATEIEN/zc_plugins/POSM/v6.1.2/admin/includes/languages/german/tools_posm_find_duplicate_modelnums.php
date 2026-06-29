@@ -20,7 +20,7 @@ define('HEADING_POSM_MODEL', 'POSM Artikelnummer');
 define ('HEADING_PRODUCTS_NAME', 'Artikelname');
 define ('HEADING_PRODUCTS_DISABLED', 'Artikel aktiv?');
 
-define ('INSTRUCTIONS', 'Verwenden Sie dieses Tool um mehrfach vorkommende Artikelnummern in Ihren Artikeln oder in Attributkombinationen zu finden.  Standardmäßig werden nur <em>aktive</em> Artikel im Bericht angezeigt. Falls Sie auch <em>deaktivierte</em> Artikel berücksichtigen wollen, kreuzen Sie die entsprechende Checkbox an und klicken Sie dann auf den <b>Go</b> Button.<br /><br /><strong>Hinweis:</strong> Falls ein Artikel ohne Attribute im Report aufscheint, dann hat dieser Artikel eine vom <em>Attribut Lagerbestand Manager</em> verwaltete SKU, die auch bereits in einem Grundartikel verwendet wird.');
+define ('INSTRUCTIONS', 'Verwenden Sie dieses Tool um mehrfach vorkommende Artikelnummern in Ihren Artikeln oder in Attributkombinationen zu finden.  Standardmäßig werden nur <em>aktive</em> Artikel im Bericht angezeigt. Falls Sie auch <em>deaktivierte</em> Artikel berücksichtigen wollen, kreuzen Sie die entsprechende Checkbox an und klicken Sie dann auf den <b>Los</b> Button.<br /><br /><strong>Hinweis:</strong> Falls ein Artikel ohne Attribute im Report aufscheint, dann hat dieser Artikel eine vom <em>Attribut Lagerbestand Manager</em> verwaltete SKU, die auch bereits in einem Grundartikel verwendet wird.');
 define ('NO_DUPS_FOUND', 'Herzlichen Glückwunsch &mdash; alle Artikelnummern sind einzigartig!'); 
 
 define ('INCLUDE_DISABLED', 'Deaktivierte Artikel einschließen?');
