@@ -1,0 +1,38 @@
+POSM Attribut Lagerbestands Manager 6.1.2 für Zen Cart 1.5.7k deutsch
+
+Voraussetzungen:
+Dieses Modul ist ausschließlich für die deutsche Zen Cart Version 1.5.7k geeignet und wird in früheren deutschen Zen Cart Versionen nicht funktionieren.
+
+Installation:
+Das Modul ist als encapsulated plugin konzipiert und ändert keinerlei bestehende Dateien
+Laden Sie den Ordner zc_plugins aus dem Ordner NEUE DATEIEN in Ihr Shopverzeichnis hoch, es werden dabei keine bestehenden Dateien überschrieben.
+Danach gehen Sie in der Shopadministration auf Module > Plugin Manager
+Markieren Sie den POSM Attribut Lagerbestands Manager und gehen rechts auf Installieren
+Nochmals mit Installieren bestätigen
+
+Konfiguration:
+Nach der Installation sind mehrere neue Menüpunkte vorhanden
+
+Konfiguration > POSM Attribut Lagerbestands Manager Konfiguration
+Alle Einstellungsmöglichkeiten sind dort erklärt
+
+Lokalisation > POSM Attribute Lagerbestand Manager: Out-of-Stock Labels
+Legen Sie hier Ihre Labels an, die Sie dann später den nicht lagernden Attributkombinationen zuweisen können.
+Diese Texte können dann in Labelform bei der Auswahl der jeweiligen Attributkombination, im Warenkorb, auf der Checkout Confirmation Seite und auf der Rechnung angezeigt werden.
+Weiterhin können Sie jeder Attributkombination eine eigene eindeutige Artikelnummer/SKU geben.
+
+Webshop > POSM Attribut Lagerbestands Manager - Lagerbestände verwalten
+Hier legen Sie nun für die gewünschten Artikel Lagerbestände für die Attributkombinationen an und weisen die gewünschten Out-of-Stock Labels für nicht lagernde Artikel zu
+
+Webshop > POSM Attribut Lagerbestands Manager - Alle anzeigen
+Hier finden Sie eine Übersicht all Ihrer angelegten Attribut Lagerbestände
+
+Tools > POSM Attribut Lagerbestand Manager: Doppelte Artikelnummern finden
+Prüfen Sie, ob Sie wirklich im Shop ausschließlich eindeutige Artikelnummern vergeben haben
+
+Extras > POSM Attribut Lagerbestand Manager: Stock by Attribues Daten konvertieren
+Wenn Sie in Ihrem Shop bisher Stock by Attributes verwendet haben, können Sie hier Ihre Daten aus der Tabelle  products_with_attributes_stock in die neue POSM Datenbankstruktur konvertieren.
+
+Eine umfangreiche englische Dokumentation zu diesem Modul finden Sie hier:
+https://github.com/lat9/options_stock_support/wiki
+
